@@ -128,3 +128,21 @@ input[type="url"]{
       outline: 0;
     }
   }
+
+
+  .container-ctn{
+    max-width: 95%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    @include respond-above(md){
+        max-width: 85%;
+    }
+    @include respond-above(lg){
+        max-width: 79%;
+    }
+    @include respond-above(xl){
+        max-width: 1611px;
+    }
+} 

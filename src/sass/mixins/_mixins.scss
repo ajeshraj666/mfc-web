@@ -64,3 +64,36 @@
   }
   
   
+
+
+    @mixin min-max($resMin, $resMax) {
+    @media (min-width: $resMin+px) and (max-width: $resMax+px) {
+      @content;
+    }
+  }
+  
+  @mixin max($res) {
+    @media (max-width: $res+px) {
+      @content;
+    }
+  }
+  
+  @mixin min($res) {
+    @media (min-width: $res+px) {
+      @content;
+    }
+  }
+
+
+@include min(1199){
+
+
+}
+
+
+// 1920,1600,1440,1366,1360,1024,768, below 767 481 375
+
+/* 1270
+   1199
+   1023
+   767 */

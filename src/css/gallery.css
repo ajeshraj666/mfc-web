@@ -1,0 +1,127 @@
+/* common font-size */
+.f-18{
+    font-size: 18px;
+    line-height: 22px;
+}
+.f-50{
+    font-size: 50px;
+    line-height: 60px;
+}
+/* end of commin font-size */
+/* font weight */
+.font-light{
+    font-weight: 300;
+}
+.font-regular{
+    font-weight: 500;
+}
+/* font weight */
+/* common focus */
+button:focus{
+    box-shadow: none !important;
+}
+/* end of common focus */
+.port-title{
+    padding: 30px 0;
+}
+.port-title p{
+    color:#0055A5;
+}
+.gallery-tab-wrapper{
+    background-color: #F2F9FF;
+    padding: 30px 0;
+}
+/* tab section */
+.tab-action{
+    justify-content: center;
+}
+.tab-action .btn-tab-blue.active{
+    background-color: #0055A5;
+}
+.tab-action .btn-tab-blue{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    margin-right: 32px;
+}
+.tab-action .btn-tab-blue.last-btn{
+    margin-right: 0px;
+}
+.gallery-img img{
+    height: 265px; /* as of now give randor size bcz if give same height of figma its stretch*/
+    width: 100%;
+    position: relative;
+}
+.gallery-img:hover img{
+    opacity: 0.7;
+    background: #0055A5;
+    border-radius: 62px;
+}
+.vid-wrapper img{
+    width: 100px;
+    height: 100px;
+}
+
+.vid-wrapper{
+    position: absolute;
+    z-index: 99999;
+    top: 50%;
+    left: 25%;
+    margin: 0 auto;
+    transform: translate(36%, -50%);
+}
+/* .vid-wrapper img{
+    opacity: 0;
+} */
+.vid{
+    position: absolute;
+    top: 0;
+    z-index: 999999;
+}
+.vid iframe{
+    border-radius: 55px;
+    max-width: 100%;
+    width: 520px;
+}
+.load-more-btn {
+    background-color: #0055A5;
+    width: 300px;
+    max-width: 100%;
+    display: block;
+    margin: 30px auto 0 auto;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+.load-more-btn li{
+    vertical-align: middle;
+}
+.btn-blue{
+    background-color: #0055A5;
+    color: #fff;
+}
+.txt-btn-align{
+    position: relative;
+    left: 52px;
+}
+/* end of tab section */
+
+/* responsive */
+@media (max-width:767px) {
+    .gallery-img img{
+        margin-bottom:20px;
+    }    
+    .vid-wrapper{
+        transform: none;
+    }
+}
+
+@media(max-width:575px){
+    .tab-action .btn-tab-blue{
+        margin-bottom: 15px;
+    }
+    .vid iframe{
+        width: 520px;
+        max-width: 100%;
+    }
+}
+/* end of responsive */
